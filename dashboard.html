@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lost & Found</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="sidebar">
+    <h2>Lost & Found</h2>
+  </div>
+
+  <div class="main">
+
+    <h2>Dashboard</h2>
+
+    <!-- FORM -->
+    <div class="card">
+      <input id="itemName" placeholder="Item name">
+      <input id="location" placeholder="Location">
+      <input type="file" id="image">
+      <img id="preview" width="120">
+
+      <br>
+
+      <button onclick="addItem('lost')">Add Lost</button>
+      <button onclick="addItem('found')">Add Found</button>
+    </div>
+
+    <div class="card">
+      <input id="personName" placeholder="Person Name">
+      <input id="phone" placeholder="Phone">
+      <input id="description" placeholder="Description">
+    </div>
+
+    <!-- SEARCH -->
+    <input id="search" placeholder="Search..." onkeyup="searchItems()">
+
+    <h3>Items</h3>
+    <div id="list"></div>
+
+    <h3>Stats</h3>
+    <div id="stats"></div>
+
+  </div>
+</div>
+
+<div id="notification"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
